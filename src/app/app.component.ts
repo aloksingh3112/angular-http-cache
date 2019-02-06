@@ -21,6 +21,11 @@ export class AppComponent {
       }
     )
 
+    this.posts=this.posts.pipe(
+      startWith(JSON.parse(localStorage[CACHE_KEY] || []);
+    )
+
+
 
   }
 
